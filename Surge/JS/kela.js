@@ -11,6 +11,5 @@ MITM = claritywallpaper.com
 */
 
 let obj = JSON.parse($response.body);
-obj.data["expireTime"] = 1630296877;
-// obj.data["level"] = 90;
+obj.data["isFree"] = true;
 $done({body: JSON.stringify(obj)});
