@@ -11,9 +11,8 @@ MITM = claritywallpaper.com
 */
 
 let obj = JSON.parse($response.body);
-obj.pictureList.forEach(item => {
-    
-});
-
 obj.data["isFree"] = true;
+obj.pictureList.forEach(element => {
+    element["isFree"] = true;
+});
 $done({body: JSON.stringify(obj)});
