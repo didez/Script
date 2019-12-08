@@ -11,7 +11,7 @@ MITM = claritywallpaper.com
 */
 
 let obj = JSON.parse($response.body);
-if (obj.data.length > 0) {
+if (obj.data) {
     obj.data.forEach(element => {
         element["isFree"] = true;
     });
